@@ -80,7 +80,8 @@
             } else {
                 NSLog(@"Yay!");
                 
-                //Push to All Stories. 
+                //Push to All Stories.
+                [self.navigationController popToRootViewControllerAnimated:YES];
             }
         }];
     }];
