@@ -29,12 +29,24 @@
 {
     
     [super viewDidLoad];
+    
+    self.entryField.placeholderColor = [UIColor whiteColor];
+    self.entryField.placeholder = @"Continue this story...";
+    
     NSLog(@"story: %@", self.story);
     NSLog(@"story Entries: %@", [self.story objectForKey:@"storyEntries"]);
     self.storyEntries = [self.story objectForKey:@"storyEntries"];
 
 //    NSLog(@"se 1 text: %@", [storyEntries[0] objectForKey:@"text"]);
 	// Do any additional setup after loading the view.
+    
+    UITapGestureRecognizer *dismissKeyboardRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:dismissKeyboardRecognizer];
+    
+}
+- (void)dismissKeyboard
+{
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning

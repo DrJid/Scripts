@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GCPlaceholderTextView.h>
 
 @interface StoryEntriesViewController : UIViewController
 @property (nonatomic, strong) PFObject *story;
 @property (nonatomic, strong) NSString *entry;
+@property (strong, nonatomic) IBOutlet GCPlaceholderTextView *entryField;
 
 @end

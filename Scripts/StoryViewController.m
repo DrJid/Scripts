@@ -31,6 +31,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    PFUser *user = [PFUser currentUser];
+    
+    NSString *title = user.username;
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"%@%@'s stories", [[title substringToIndex:1] uppercaseString], [title substringFromIndex:1]];
+    
     }
 
 - (void)viewWillAppear:(BOOL)animated
