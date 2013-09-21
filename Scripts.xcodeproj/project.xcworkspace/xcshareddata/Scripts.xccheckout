@@ -5,18 +5,28 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>F0319BB0-2390-4BC2-888F-3C8E0E906490</string>
+=======
+	<string>589F79CA-11F8-4465-84A5-C42C75F7B7BE</string>
+>>>>>>> 025e6001549daac7aa8617227ed6856505a451a0
 	<key>IDESourceControlProjectName</key>
 	<string>Scripts</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>DBD05B19-0696-4D39-A663-FA73411EDB4C</key>
 		<string>https://github.com/DrJid/Scripts.git</string>
+=======
+		<key>ADF099CC-6F86-41BB-8C30-9009886B4F00</key>
+		<string>ssh://github.com/DrJid/Scripts.git</string>
+>>>>>>> 025e6001549daac7aa8617227ed6856505a451a0
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Scripts.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>DBD05B19-0696-4D39-A663-FA73411EDB4C</key>
 		<string>../..</string>
 	</dict>
@@ -26,13 +36,28 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>DBD05B19-0696-4D39-A663-FA73411EDB4C</string>
+=======
+		<key>ADF099CC-6F86-41BB-8C30-9009886B4F00</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/DrJid/Scripts.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADF099CC-6F86-41BB-8C30-9009886B4F00</string>
+>>>>>>> 025e6001549daac7aa8617227ed6856505a451a0
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>DBD05B19-0696-4D39-A663-FA73411EDB4C</string>
+=======
+			<string>ADF099CC-6F86-41BB-8C30-9009886B4F00</string>
+>>>>>>> 025e6001549daac7aa8617227ed6856505a451a0
 			<key>IDESourceControlWCCName</key>
 			<string>Scripts</string>
 		</dict>

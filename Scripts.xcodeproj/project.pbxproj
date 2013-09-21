@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1607083C17EDBC8500192A2A /* StoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1607083B17EDBC8500192A2A /* StoryViewCell.m */; };
 		162E555817ED514000A0C1E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162E555717ED514000A0C1E3 /* Foundation.framework */; };
 		162E555A17ED514000A0C1E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162E555917ED514000A0C1E3 /* CoreGraphics.framework */; };
 		162E555C17ED514000A0C1E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162E555B17ED514000A0C1E3 /* UIKit.framework */; };
@@ -37,6 +38,11 @@
 		1682F63E17ED5F41002068CA /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F63D17ED5F41002068CA /* StoryViewController.m */; };
 		1682F64117ED5F4E002068CA /* StoryEntriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F64017ED5F4E002068CA /* StoryEntriesViewController.m */; };
 		1682F64417ED5F62002068CA /* StoryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F64317ED5F62002068CA /* StoryMapViewController.m */; };
+		1698722517EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722217EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m */; };
+		1698722617EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */; };
+		367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 367A677F17ED92C300AF1EA4 /* rarr.jpg */; };
+		369914A517ED82C100BA98C0 /* pony.png in Resources */ = {isa = PBXBuildFile; fileRef = 369914A417ED82C100BA98C0 /* pony.png */; };
+		8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCDA17EE016D00F49DA1 /* background2.png */; };
 		D3F77472F41B4C479722857F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149BA87B30A84DA2BAF984E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		149BA87B30A84DA2BAF984E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1607083A17EDBC8500192A2A /* StoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewCell.h; sourceTree = "<group>"; };
+		1607083B17EDBC8500192A2A /* StoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewCell.m; sourceTree = "<group>"; };
 		162E555417ED514000A0C1E3 /* Scripts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scripts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162E555717ED514000A0C1E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		162E555917ED514000A0C1E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,7 +102,15 @@
 		1682F64017ED5F4E002068CA /* StoryEntriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryEntriesViewController.m; sourceTree = "<group>"; };
 		1682F64217ED5F62002068CA /* StoryMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMapViewController.h; sourceTree = "<group>"; };
 		1682F64317ED5F62002068CA /* StoryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMapViewController.m; sourceTree = "<group>"; };
+		1698722117EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		1698722217EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		1698722317EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		16CFC72817EDF5E20099019D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3105AC859D5C4D8F92FE3E30 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		367A677F17ED92C300AF1EA4 /* rarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rarr.jpg; sourceTree = "<group>"; };
+		369914A417ED82C100BA98C0 /* pony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pony.png; sourceTree = "<group>"; };
+		8B2BCCDA17EE016D00F49DA1 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +150,8 @@
 		162E554B17ED514000A0C1E3 = {
 			isa = PBXGroup;
 			children = (
+				1698722017EDD5B3008DFE44 /* Vendor */,
+				369914A317ED82AA00BA98C0 /* Images */,
 				162E555D17ED514000A0C1E3 /* Scripts */,
 				162E557C17ED514000A0C1E3 /* ScriptsTests */,
 				162E555617ED514000A0C1E3 /* Frameworks */,
@@ -154,6 +172,7 @@
 		162E555617ED514000A0C1E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16CFC72817EDF5E20099019D /* MapKit.framework */,
 				162E559C17ED582400A0C1E3 /* SystemConfiguration.framework */,
 				162E559A17ED581C00A0C1E3 /* StoreKit.framework */,
 				162E559817ED581600A0C1E3 /* Security.framework */,
@@ -196,6 +215,8 @@
 				1682F64317ED5F62002068CA /* StoryMapViewController.m */,
 				162E556F17ED514000A0C1E3 /* Images.xcassets */,
 				162E555E17ED514000A0C1E3 /* Supporting Files */,
+				1607083A17EDBC8500192A2A /* StoryViewCell.h */,
+				1607083B17EDBC8500192A2A /* StoryViewCell.m */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -227,6 +248,27 @@
 				162E557F17ED514000A0C1E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1698722017EDD5B3008DFE44 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1698722117EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.h */,
+				1698722217EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m */,
+				1698722317EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.h */,
+				1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		369914A317ED82AA00BA98C0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B2BCCDA17EE016D00F49DA1 /* background2.png */,
+				367A677F17ED92C300AF1EA4 /* rarr.jpg */,
+				369914A417ED82C100BA98C0 /* pony.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +320,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Maijid Moujaled";
 				TargetAttributes = {
+					162E555317ED514000A0C1E3 = {
+						DevelopmentTeam = JW9JB29EY4;
+					};
 					162E557417ED514000A0C1E3 = {
 						TestTargetID = 162E555317ED514000A0C1E3;
 					};
@@ -308,6 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				162E557017ED514000A0C1E3 /* Images.xcassets in Resources */,
+				367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */,
+				8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */,
+				369914A517ED82C100BA98C0 /* pony.png in Resources */,
 				162E556217ED514000A0C1E3 /* InfoPlist.strings in Resources */,
 				162E556B17ED514000A0C1E3 /* Main.storyboard in Resources */,
 			);
@@ -361,14 +409,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1607083C17EDBC8500192A2A /* StoryViewCell.m in Sources */,
 				1682F63E17ED5F41002068CA /* StoryViewController.m in Sources */,
 				1682F63217ED5EB4002068CA /* LoginViewController.m in Sources */,
 				162E556E17ED514000A0C1E3 /* ViewController.m in Sources */,
 				1682F64417ED5F62002068CA /* StoryMapViewController.m in Sources */,
+				1698722617EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m in Sources */,
 				162E556817ED514000A0C1E3 /* AppDelegate.m in Sources */,
 				162E556417ED514000A0C1E3 /* main.m in Sources */,
 				1682F63817ED5ED3002068CA /* ProfileViewController.m in Sources */,
 				1682F63B17ED5EE8002068CA /* CreateStoryViewController.m in Sources */,
+				1698722517EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				1682F63517ED5EBF002068CA /* SignupViewController.m in Sources */,
 				1682F64117ED5F4E002068CA /* StoryEntriesViewController.m in Sources */,
 			);
@@ -494,10 +545,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scripts/Scripts-Prefix.pch";
 				INFOPLIST_FILE = "Scripts/Scripts-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -508,10 +562,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scripts/Scripts-Prefix.pch";
 				INFOPLIST_FILE = "Scripts/Scripts-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

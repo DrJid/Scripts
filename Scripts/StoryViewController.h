@@ -10,4 +10,6 @@
 
 @interface StoryViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *storyArray;
+
 @end

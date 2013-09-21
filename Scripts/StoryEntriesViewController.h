@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface StoryEntriesViewController : UIViewController
+@property (nonatomic, strong) PFObject *story;
+@property (nonatomic, strong) NSString *entry;
 
 @end
