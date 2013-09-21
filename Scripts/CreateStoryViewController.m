@@ -79,6 +79,7 @@
             } else {
                 NSLog(@"Yay!");
                 
+                //Push to All Stories. 
             }
         }];
     }];

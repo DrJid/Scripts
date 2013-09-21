@@ -7,6 +7,7 @@
 //
 
 #import "StoryEntriesViewController.h"
+#import "StoryMapViewController.h"
 
 @interface StoryEntriesViewController () <UITextViewDelegate>
 @property (nonatomic, strong) NSArray *storyEntries;
@@ -121,6 +122,14 @@
         }];
     }
     return YES;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showMap"]) {
+        StoryMapViewController *smvc = (StoryMapViewController *)segue.destinationViewController;
+        smvc.storyEntries = self.storyEntries;
+    }
 }
 
 

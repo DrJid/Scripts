@@ -37,7 +37,7 @@
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Story"];
     [query includeKey:@"storyEntries"];
-    
+    [query includeKey:@"storyEntries.user"]; 
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (error) {
         }

@@ -10,4 +10,6 @@
 
 @interface StoryMapViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *storyEntries;
+
 @end

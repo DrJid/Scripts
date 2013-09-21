@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu2-re-yKd">
-                                <rect key="frame" x="134" y="464" width="53" height="30"/>
+                                <rect key="frame" x="130" y="464" width="60" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Submit!">
@@ -392,7 +392,7 @@
                     <navigationItem key="navigationItem" title="Story Entries" id="GKs-KR-w6x">
                         <barButtonItem key="rightBarButtonItem" title="Map" id="sp4-Wc-h8A">
                             <connections>
-                                <segue destination="h5O-7f-LJq" kind="push" id="6L1-NR-jr3"/>
+                                <segue destination="h5O-7f-LJq" kind="push" identifier="showMap" id="6L1-NR-jr3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -415,9 +415,21 @@
                     <view key="view" contentMode="scaleToFill" id="6El-Ga-uQT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcV-eO-ZZO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="h5O-7f-LJq" id="32r-KP-pGP"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="fjS-tW-Lxr"/>
+                    <connections>
+                        <outlet property="mapView" destination="WcV-eO-ZZO" id="X1T-9m-tz7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHH-Md-6jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
