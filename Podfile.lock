@@ -1,15 +1,18 @@
 PODS:
   - Facebook-iOS-SDK (3.8.0)
+  - GCPlaceholderTextView (1.0.1)
   - Parse (1.2.13):
     - Facebook-iOS-SDK (~> 3.5)
   - SVProgressHUD (0.9)
 
 DEPENDENCIES:
+  - GCPlaceholderTextView
   - Parse
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   Facebook-iOS-SDK: 55a22fe8bcaacd638cde9014af6b3ee85f4d71fb
+  GCPlaceholderTextView: 5eeef8d07a1dece8fdcd7762dfc21b8e89800838
   Parse: 71038f6c13fef880c628db7a2725bb7138ead81a
   SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
 

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GCPlaceholderTextView.h>
 
-@interface CreateStoryViewController : UIViewController
+@interface CreateStoryViewController : UIViewController <UITextViewDelegate>
+
+@property (strong, nonatomic) IBOutlet GCPlaceholderTextView *createStoryField;
 
 @end

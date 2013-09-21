@@ -27,12 +27,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    PFUser *user = [PFUser currentUser];
+    
+    if (user) {
+        NSLog(@"Current User: %@", user);
+    }
+    
+    else {
+        [self performSegueWithIdentifier:@"showLogin" sender:self];
+    }
+    
+    self.usernameLabel.text = user.username;
+    self.emailLabel.text = user.email;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    
+    [self performSegueWithIdentifier:@"showLogin" sender:self];
 }
 
 @end
