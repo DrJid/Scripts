@@ -11,6 +11,10 @@
 
 @interface CreateStoryViewController : UIViewController <UITextViewDelegate>
 
-@property (strong, nonatomic) IBOutlet GCPlaceholderTextView *createStoryField;
+@property (strong, nonatomic) IBOutlet UITextField *titleField;
+@property (strong, nonatomic) IBOutlet GCPlaceholderTextView *firstEntryField;
+@property (strong, nonatomic) IBOutlet GCPlaceholderTextView *summaryField;
+
+-(IBAction)submit:(id)sender;
 
 @end

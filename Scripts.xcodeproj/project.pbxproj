@@ -37,6 +37,7 @@
 		1682F63E17ED5F41002068CA /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F63D17ED5F41002068CA /* StoryViewController.m */; };
 		1682F64117ED5F4E002068CA /* StoryEntriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F64017ED5F4E002068CA /* StoryEntriesViewController.m */; };
 		1682F64417ED5F62002068CA /* StoryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F64317ED5F62002068CA /* StoryMapViewController.m */; };
+		367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 367A677F17ED92C300AF1EA4 /* rarr.jpg */; };
 		369914A517ED82C100BA98C0 /* pony.png in Resources */ = {isa = PBXBuildFile; fileRef = 369914A417ED82C100BA98C0 /* pony.png */; };
 		D3F77472F41B4C479722857F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149BA87B30A84DA2BAF984E0 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		1682F64217ED5F62002068CA /* StoryMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryMapViewController.h; sourceTree = "<group>"; };
 		1682F64317ED5F62002068CA /* StoryMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryMapViewController.m; sourceTree = "<group>"; };
 		3105AC859D5C4D8F92FE3E30 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		367A677F17ED92C300AF1EA4 /* rarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rarr.jpg; sourceTree = "<group>"; };
 		369914A417ED82C100BA98C0 /* pony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pony.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +237,7 @@
 		369914A317ED82AA00BA98C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				367A677F17ED92C300AF1EA4 /* rarr.jpg */,
 				369914A417ED82C100BA98C0 /* pony.png */,
 			);
 			name = Images;
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162E557017ED514000A0C1E3 /* Images.xcassets in Resources */,
+				367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */,
 				369914A517ED82C100BA98C0 /* pony.png in Resources */,
 				162E556217ED514000A0C1E3 /* InfoPlist.strings in Resources */,
 				162E556B17ED514000A0C1E3 /* Main.storyboard in Resources */,

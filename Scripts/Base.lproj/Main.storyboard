@@ -80,7 +80,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pony.png" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-cj-ZJS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rarr.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-cj-ZJS">
                                 <rect key="frame" x="98" y="80" width="124" height="101"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -168,14 +168,30 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu2-re-yKd">
-                                <rect key="frame" x="134" y="238" width="53" height="30"/>
+                                <rect key="frame" x="134" y="464" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="8yU-Au-07K" eventType="touchUpInside" id="wwP-h8-EEb"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-o7-OKt" customClass="GCPlaceholderTextView">
-                                <rect key="frame" x="40" y="84" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-o7-OKt" customClass="GCPlaceholderTextView">
+                                <rect key="frame" x="40" y="162" width="240" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gn9-Q1-eAc">
+                                <rect key="frame" x="40" y="95" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-EP-S5u" customClass="GCPlaceholderTextView">
+                                <rect key="frame" x="40" y="332" width="240" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -186,12 +202,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Create Story" id="9vn-6s-m3L"/>
                     <connections>
-                        <outlet property="createStoryField" destination="Sbg-o7-OKt" id="Vct-dI-d7L"/>
+                        <outlet property="firstEntryField" destination="Sbg-o7-OKt" id="Dp7-FY-JDE"/>
+                        <outlet property="summaryField" destination="dR1-EP-S5u" id="4Ac-jv-9e1"/>
+                        <outlet property="titleField" destination="gn9-Q1-eAc" id="GA6-7t-tjL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2G-LX-qTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1872" y="979"/>
+            <point key="canvasLocation" x="1872" y="1007"/>
         </scene>
         <!--Signup View Controller - Sign Up-->
         <scene sceneID="WDO-AO-AED">
@@ -358,7 +376,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pony.png" width="684" height="528"/>
+        <image name="rarr.jpg" width="178" height="157"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
