@@ -32,11 +32,21 @@
     
     UITapGestureRecognizer *dismissKeyboardRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:dismissKeyboardRecognizer];
+    
 }
 
 - (void)dismissKeyboard
 {
     [self.view endEditing:YES];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.25];
+    self.view.frame = CGRectMake(0,-10,320,400);
+    [UIView commitAnimations];
+    
 }
 
 - (void)didReceiveMemoryWarning
