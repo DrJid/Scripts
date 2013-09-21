@@ -72,7 +72,6 @@
     if(cell == nil)  {
         cell = [[StoryViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:cellIdentifier];
-        
     }
     
     //Customize Cell

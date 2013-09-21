@@ -151,7 +151,7 @@
          renderer.strokeColor = [UIColor blueColor];
          }
          */
-        renderer.strokeColor = [UIColor blueColor];
+        renderer.strokeColor = [UIColor colorWithRed:1.000 green:0.522 blue:0.525 alpha:1.000];
         return renderer;
     }
     return nil;
@@ -171,16 +171,33 @@
         annotationView.animatesDrop = NO;
         annotationView.pinColor = MKPinAnnotationColorGreen;
         
+        PFQuery *userQuery = [PFUser query];
+        [userQuery whereKey:@"username" equalTo:annotation.title];
+         NSArray *users = [userQuery findObjects];
+        PFUser *user = users.firstObject;
+        NSLog(@"user: %@", users);
+        
         NSLog(@"an t: %@", annotation.title);
         
+        PFFile *imageFile = [user objectForKey:@"image"];
+//        self.profileImageView.file = imageFile;
+//        [self.profileImageView loadInBackground];
+//        
+
+        
+        
+        /*
         UIImage *image = nil;
         if ([annotation.title isEqualToString:@"Lea"]) {
             image = [UIImage imageNamed:@"lea.jpg"];
         } else {
             image = [UIImage imageNamed:@"trigang.jpg"];
         }
+        */
         
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        PFImageView *imageView = [[PFImageView alloc] init];
+        imageView.file = imageFile;
+        [imageView loadInBackground];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.frame = CGRectMake(0, 0, 35, 35);
         annotationView.leftCalloutAccessoryView = imageView;

@@ -7,6 +7,7 @@
 //
 
 #import "CreateStoryViewController.h"
+#import "StoryViewController.h"
 
 @interface CreateStoryViewController ()
 
@@ -80,7 +81,9 @@
             } else {
                 NSLog(@"Yay!");
                 
-                //Push to All Stories. 
+                //Push to All Stories.
+                [self  performSegueWithIdentifier:@"showStories" sender:nil];
+
             }
         }];
     }];
@@ -88,6 +91,15 @@
     
    
 }
+
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showStories"]) {
+        <#statements#>
+    }
+}
+*/
 
 - (void)submit2:(id)sender
 {
