@@ -83,7 +83,6 @@
                 
                 //Push to All Stories.
                 [self  performSegueWithIdentifier:@"showStories" sender:nil];
-
             }
         }];
     }];
