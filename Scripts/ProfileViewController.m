@@ -32,6 +32,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    
     PFUser *user = [PFUser currentUser];
     
     if (user) {
