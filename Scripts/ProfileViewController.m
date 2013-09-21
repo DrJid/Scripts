@@ -36,6 +36,10 @@
     
     PFUser *user = [PFUser currentUser];
     
+    NSString *title = user.username;
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"%@%@'s scripts", [[title substringToIndex:1] uppercaseString], [title substringFromIndex:1]];
+    
     if (user) {
         NSLog(@"Current User: %@", user);
     }
