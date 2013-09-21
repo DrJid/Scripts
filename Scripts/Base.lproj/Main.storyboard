@@ -60,7 +60,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Scripts" id="He5-ps-m7Q"/>
+                    <navigationItem key="navigationItem" title="Scripts" id="He5-ps-m7Q">
+                        <barButtonItem key="backBarButtonItem" title=" " id="amV-KG-Ydy"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="passwordField" destination="2Ex-k3-tt1" id="2Vm-fa-ueL"/>
                         <outlet property="usernameField" destination="A1c-kL-bDZ" id="S46-Ut-zkm"/>
@@ -311,7 +313,7 @@
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26553910739999997" green="0.65710698339999996" blue="0.63601044799999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -323,7 +325,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign Up" id="8gr-AM-bZ5"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="8gr-AM-bZ5">
+                        <barButtonItem key="backBarButtonItem" title=" " id="gKg-mL-dBE"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="Kwn-4n-YXe" id="Nwu-EL-4pB"/>
                         <outlet property="passwordField" destination="2Qc-iw-aTO" id="X1h-qh-FFu"/>
@@ -537,6 +541,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background2.png" width="999" height="1725"/>
+        <image name="background2.png" width="999" height="1725"/>
+        <image name="background2.png" width="999" height="1725"/>
         <image name="background2.png" width="999" height="1725"/>
         <image name="rarr.jpg" width="178" height="157"/>
     </resources>
