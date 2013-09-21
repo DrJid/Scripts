@@ -28,11 +28,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.firstEntryField.placeholder = @"Write your Story :D";
-    self.summaryField.placeholder = @"Write a summary for your story!!!";
+    self.firstEntryField.placeholder = @"Start your story...";
+    self.summaryField.placeholder = @"Submit a summary...";
     
     UITapGestureRecognizer *dismissKeyboardRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:dismissKeyboardRecognizer];
+
 }
 - (void)dismissKeyboard
 {

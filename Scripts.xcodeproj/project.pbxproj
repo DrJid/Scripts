@@ -42,6 +42,8 @@
 		1698722617EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */; };
 		367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 367A677F17ED92C300AF1EA4 /* rarr.jpg */; };
 		369914A517ED82C100BA98C0 /* pony.png in Resources */ = {isa = PBXBuildFile; fileRef = 369914A417ED82C100BA98C0 /* pony.png */; };
+		8B2BCCD517EDF9C500F49DA1 /* scriptbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCD417EDF9C500F49DA1 /* scriptbg.png */; };
+		8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCDA17EE016D00F49DA1 /* background2.png */; };
 		D3F77472F41B4C479722857F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149BA87B30A84DA2BAF984E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		3105AC859D5C4D8F92FE3E30 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		367A677F17ED92C300AF1EA4 /* rarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rarr.jpg; sourceTree = "<group>"; };
 		369914A417ED82C100BA98C0 /* pony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pony.png; sourceTree = "<group>"; };
+		8B2BCCD417EDF9C500F49DA1 /* scriptbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scriptbg.png; path = ../../scriptbg.png; sourceTree = "<group>"; };
+		8B2BCCDA17EE016D00F49DA1 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +264,8 @@
 		369914A317ED82AA00BA98C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8B2BCCDA17EE016D00F49DA1 /* background2.png */,
+				8B2BCCD417EDF9C500F49DA1 /* scriptbg.png */,
 				367A677F17ED92C300AF1EA4 /* rarr.jpg */,
 				369914A417ED82C100BA98C0 /* pony.png */,
 			);
@@ -316,7 +322,7 @@
 				ORGANIZATIONNAME = "Maijid Moujaled";
 				TargetAttributes = {
 					162E555317ED514000A0C1E3 = {
-						DevelopmentTeam = JW9JB29EY4;
+						DevelopmentTeam = H69TS4DPUJ;
 					};
 					162E557417ED514000A0C1E3 = {
 						TestTargetID = 162E555317ED514000A0C1E3;
@@ -349,7 +355,9 @@
 			files = (
 				162E557017ED514000A0C1E3 /* Images.xcassets in Resources */,
 				367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */,
+				8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */,
 				369914A517ED82C100BA98C0 /* pony.png in Resources */,
+				8B2BCCD517EDF9C500F49DA1 /* scriptbg.png in Resources */,
 				162E556217ED514000A0C1E3 /* InfoPlist.strings in Resources */,
 				162E556B17ED514000A0C1E3 /* Main.storyboard in Resources */,
 			);
