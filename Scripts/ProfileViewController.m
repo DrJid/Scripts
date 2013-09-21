@@ -34,31 +34,41 @@
     
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
     
-    PFUser *user = [PFUser currentUser];
-    
-    if (user) {
-        NSLog(@"Current User: %@", user);
-    }
-    
-    else {
-        [self performSegueWithIdentifier:@"showLogin" sender:self];
-    }
-    
-    self.usernameLabel.text = user.username;
-    self.emailLabel.text = user.email;
-    
-    PFFile *imageFile = [[PFUser currentUser] objectForKey:@"image"];
-    self.profileImageView.file = imageFile;
-    [self.profileImageView loadInBackground];
     
     
-    UITapGestureRecognizer *tapProfileGesture  = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showUploadImage)];
+    
+    UITapGestureRecognizer *tapProfileGesture  = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showUploadImagePicker)];
     [self.profileImageView addGestureRecognizer:tapProfileGesture];
    
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    PFUser *user = [PFUser currentUser];
+    
+    if (user) {
+        NSLog(@"Current User: %@", user);
+        self.usernameLabel.text = user.username;
+        self.emailLabel.text = user.email;
+        
+        PFFile *imageFile = [[PFUser currentUser] objectForKey:@"image"];
+        self.profileImageView.file = imageFile;
+        [self.profileImageView loadInBackground];
 
-- (void)showUploadImage
+    }
+    
+    else {
+        self.usernameLabel.text = @"";
+        self.emailLabel.text = @"";
+        
+        self.profileImageView.image = [UIImage imageNamed:@"rarr.jpg"];
+        [self performSegueWithIdentifier:@"showLogin" sender:self];
+    }
+    
+   }
+
+
+- (void)showUploadImagePicker
 {
     self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.delegate = self;
