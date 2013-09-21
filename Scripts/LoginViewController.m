@@ -29,6 +29,14 @@
 	// Do any additional setup after loading the view.
     
     self.navigationItem.hidesBackButton = YES;
+    
+    UITapGestureRecognizer *dismissKeyboardRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:dismissKeyboardRecognizer];
+}
+
+- (void)dismissKeyboard
+{
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning
