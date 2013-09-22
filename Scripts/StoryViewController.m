@@ -93,6 +93,7 @@
     
     cell.titleField.text = [story objectForKey:@"title"];
     cell.summaryField.text = [story objectForKey:@"summary"];
+    cell.imageField = [[PFUser currentUser] objectForKey:@"image"];
     
     self.aTitle = [story objectForKey:@"title"];
     

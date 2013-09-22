@@ -11,5 +11,6 @@
 @interface StoryViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleField;
 @property (weak, nonatomic) IBOutlet UILabel *summaryField;
+@property (strong, nonatomic) IBOutlet UIImageView *imageField;
 
 @end
