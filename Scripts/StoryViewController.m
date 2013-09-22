@@ -94,6 +94,8 @@
     cell.titleField.text = [story objectForKey:@"title"];
     cell.summaryField.text = [story objectForKey:@"summary"];
     
+    self.aTitle = [story objectForKey:@"title"];
+    
     return cell;
 }
 
