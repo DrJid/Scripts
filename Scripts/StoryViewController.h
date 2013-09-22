@@ -11,5 +11,6 @@
 @interface StoryViewController : UIViewController
 
 @property (nonatomic, strong) NSArray *storyArray;
+@property (nonatomic, strong) NSString *aTitle;
 
 @end

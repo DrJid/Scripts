@@ -10,6 +10,7 @@
 #import "StoryMapViewController.h"
 #import "StoryViewEntryCell.h"
 #import <SVProgressHUD.h>
+#import "StoryViewController.h"
 
 @interface StoryEntriesViewController () <UITextViewDelegate>
 @property (nonatomic, strong) NSArray *storyEntries;
@@ -33,6 +34,8 @@
 {
     
     [super viewDidLoad];
+    
+    self.navigationItem.title = [self.story objectForKey:@"title"];
     
     self.entryField.placeholderColor = [UIColor whiteColor];
 
