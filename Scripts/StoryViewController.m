@@ -83,6 +83,11 @@
     
     //Customize Cell
     
+    UIView *selectionColor = [[UIView alloc] init];
+    selectionColor.backgroundColor = [UIColor colorWithRed:(71/255.0) green:(169/255.0) blue:(162/255.0) alpha:1];
+    
+    cell.selectedBackgroundView = selectionColor;
+    
     PFObject *story = [self.storyArray objectAtIndex:indexPath.row];
     
     cell.titleField.text = [story objectForKey:@"title"];
