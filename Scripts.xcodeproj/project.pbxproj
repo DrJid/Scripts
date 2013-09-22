@@ -40,6 +40,7 @@
 		1682F64417ED5F62002068CA /* StoryMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1682F64317ED5F62002068CA /* StoryMapViewController.m */; };
 		1698722517EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722217EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m */; };
 		1698722617EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */; };
+		16CFC72A17EE65A40099019D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CFC72817EDF5E20099019D /* MapKit.framework */; };
 		367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 367A677F17ED92C300AF1EA4 /* rarr.jpg */; };
 		369914A517ED82C100BA98C0 /* pony.png in Resources */ = {isa = PBXBuildFile; fileRef = 369914A417ED82C100BA98C0 /* pony.png */; };
 		8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCDA17EE016D00F49DA1 /* background2.png */; };
@@ -124,6 +125,7 @@
 				162E559B17ED581C00A0C1E3 /* StoreKit.framework in Frameworks */,
 				162E559917ED581600A0C1E3 /* Security.framework in Frameworks */,
 				162E559717ED581000A0C1E3 /* QuartzCore.framework in Frameworks */,
+				16CFC72A17EE65A40099019D /* MapKit.framework in Frameworks */,
 				162E559517ED580800A0C1E3 /* MobileCoreServices.framework in Frameworks */,
 				162E559317ED580000A0C1E3 /* libz.1.1.3.dylib in Frameworks */,
 				162E559117ED57F700A0C1E3 /* CoreLocation.framework in Frameworks */,
@@ -324,7 +326,14 @@
 				ORGANIZATIONNAME = "Maijid Moujaled";
 				TargetAttributes = {
 					162E555317ED514000A0C1E3 = {
-						DevelopmentTeam = H69TS4DPUJ;
+
+						DevelopmentTeam = JW9JB29EY4;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+
 					};
 					162E557417ED514000A0C1E3 = {
 						TestTargetID = 162E555317ED514000A0C1E3;
