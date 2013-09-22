@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1607083C17EDBC8500192A2A /* StoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1607083B17EDBC8500192A2A /* StoryViewCell.m */; };
+		162E36FC17EEA7A5009D5CFE /* StoryViewEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 162E36FB17EEA7A5009D5CFE /* StoryViewEntryCell.m */; };
 		162E555817ED514000A0C1E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162E555717ED514000A0C1E3 /* Foundation.framework */; };
 		162E555A17ED514000A0C1E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162E555917ED514000A0C1E3 /* CoreGraphics.framework */; };
 		162E555C17ED514000A0C1E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 162E555B17ED514000A0C1E3 /* UIKit.framework */; };
@@ -65,6 +66,8 @@
 		149BA87B30A84DA2BAF984E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1607083A17EDBC8500192A2A /* StoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewCell.h; sourceTree = "<group>"; };
 		1607083B17EDBC8500192A2A /* StoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewCell.m; sourceTree = "<group>"; };
+		162E36FA17EEA7A5009D5CFE /* StoryViewEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewEntryCell.h; sourceTree = "<group>"; };
+		162E36FB17EEA7A5009D5CFE /* StoryViewEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewEntryCell.m; sourceTree = "<group>"; };
 		162E555417ED514000A0C1E3 /* Scripts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scripts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162E555717ED514000A0C1E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		162E555917ED514000A0C1E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -227,6 +230,8 @@
 				162E555E17ED514000A0C1E3 /* Supporting Files */,
 				1607083A17EDBC8500192A2A /* StoryViewCell.h */,
 				1607083B17EDBC8500192A2A /* StoryViewCell.m */,
+				162E36FA17EEA7A5009D5CFE /* StoryViewEntryCell.h */,
+				162E36FB17EEA7A5009D5CFE /* StoryViewEntryCell.m */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -335,7 +340,7 @@
 				ORGANIZATIONNAME = "Maijid Moujaled";
 				TargetAttributes = {
 					162E555317ED514000A0C1E3 = {
-						DevelopmentTeam = H69TS4DPUJ;
+						DevelopmentTeam = JW9JB29EY4;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -443,6 +448,7 @@
 				1682F63817ED5ED3002068CA /* ProfileViewController.m in Sources */,
 				1682F63B17ED5EE8002068CA /* CreateStoryViewController.m in Sources */,
 				1698722517EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				162E36FC17EEA7A5009D5CFE /* StoryViewEntryCell.m in Sources */,
 				1682F63517ED5EBF002068CA /* SignupViewController.m in Sources */,
 				1682F64117ED5F4E002068CA /* StoryEntriesViewController.m in Sources */,
 			);

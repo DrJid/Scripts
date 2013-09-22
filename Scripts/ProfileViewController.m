@@ -105,8 +105,7 @@
 #pragma mark - Camera Delegate methods
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [self dismissViewControllerAnimated:NO completion:nil];
-    self.tabBarController.selectedIndex = 0;
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -118,11 +117,11 @@
         UIImage *image = info[UIImagePickerControllerOriginalImage];
         self.profileImageView.image = image;
         
-        
         NSData *fileData;
         NSString *fileName;
         
         if (image) {
+        
             UIImage *newImage = [self resizeImage:image toWidth:320.0f andHeight:320.0f];
 
             fileData = UIImagePNGRepresentation(newImage);

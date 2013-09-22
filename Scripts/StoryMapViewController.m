@@ -66,6 +66,8 @@
     NSLog(@"map ann: %@", self.mapAnnotations); 
     CLLocationCoordinate2D allLocations[ self.locationArray.count ];
     
+    MKMapPoint points[self.locationArray.count];
+
     int i = 0;
     for (PFGeoPoint *geoPoint in self.locationArray)
     {
@@ -73,15 +75,23 @@
         location.latitude = geoPoint.latitude;
         location.longitude = geoPoint.longitude;
         allLocations[i++] = location;
+        points[i++] = MKMapPointForCoordinate(location);
     }
     MKGeodesicPolyline *polyline = [MKGeodesicPolyline polylineWithCoordinates:allLocations count:self.locationArray.count];
 
-    
     [self.mapView addAnnotations:self.mapAnnotations];
     if (self.locationArray.count > 1) {
         [self.mapView addOverlay:polyline level:MKOverlayLevelAboveRoads];
     }
+    
+//    MKCoordinateRegion boundingRegion = CoordinateRegionBoundingMapPoints(points, self.locationArray.count);
 
+    /*
+    boundingRegion.span.latitudeDelta *= 1.1f;
+    boundingRegion.span.longitudeDelta *= 1.1f;
+    [self.mapView setRegion:boundingRegion animated:YES];
+*/
+    
     /*
     CLLocationCoordinate2D coords[3] = {startLocation, endLocation, otherLocation};
     MKGeodesicPolyline *polyline = [MKGeodesicPolyline polylineWithCoordinates:coords count:3];

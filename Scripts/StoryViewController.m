@@ -42,6 +42,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Story"];
+    query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     [query includeKey:@"storyEntries"];
     [query includeKey:@"storyEntries.user"];
     [query orderByDescending:@"updatedAt"];
