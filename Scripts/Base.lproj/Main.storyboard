@@ -92,7 +92,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVg-5b-zWt">
                                 <rect key="frame" x="51" y="76" width="218" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.38105959360000002" green="0.55662755429999999" blue="0.56790098850000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.98090651360000003" green="0.97741047380000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilepic2.png" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-cj-ZJS" customClass="PFImageView">
                                 <rect key="frame" x="60" y="85" width="200" height="251"/>
