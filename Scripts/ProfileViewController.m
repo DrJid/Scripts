@@ -32,10 +32,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:(71/255.0) green:(169/255.0) blue:(162/255.0) alpha:1];;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
-    
-    
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(127/255.0) green:(142/255.0) blue:(166/255.0) alpha:1];
     
     UITapGestureRecognizer *tapProfileGesture  = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showUploadImagePicker)];
     [self.profileImageView addGestureRecognizer:tapProfileGesture];

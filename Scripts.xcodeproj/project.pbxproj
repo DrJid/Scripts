@@ -47,6 +47,7 @@
 		8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCDA17EE016D00F49DA1 /* background2.png */; };
 		8B2BCCE517EE2E7100F49DA1 /* profilepic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCE417EE2E7100F49DA1 /* profilepic2.png */; };
 		8BF6F81717EE86D100647EA2 /* background3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8BF6F81617EE86D100647EA2 /* background3.jpeg */; };
+		8BF6F81917EE8A8900647EA2 /* tablebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BF6F81817EE8A8900647EA2 /* tablebg.png */; };
 		D3F77472F41B4C479722857F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149BA87B30A84DA2BAF984E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		8B2BCCDA17EE016D00F49DA1 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		8B2BCCE417EE2E7100F49DA1 /* profilepic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilepic2.png; sourceTree = "<group>"; };
 		8BF6F81617EE86D100647EA2 /* background3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background3.jpeg; sourceTree = "<group>"; };
+		8BF6F81817EE8A8900647EA2 /* tablebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablebg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 		369914A317ED82AA00BA98C0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8BF6F81817EE8A8900647EA2 /* tablebg.png */,
 				8BF6F81617EE86D100647EA2 /* background3.jpeg */,
 				8B2BCCE417EE2E7100F49DA1 /* profilepic2.png */,
 				8B2BCCDA17EE016D00F49DA1 /* background2.png */,
@@ -332,7 +335,7 @@
 				ORGANIZATIONNAME = "Maijid Moujaled";
 				TargetAttributes = {
 					162E555317ED514000A0C1E3 = {
-						DevelopmentTeam = JW9JB29EY4;
+						DevelopmentTeam = H69TS4DPUJ;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162E557017ED514000A0C1E3 /* Images.xcassets in Resources */,
+				8BF6F81917EE8A8900647EA2 /* tablebg.png in Resources */,
 				8B2BCCE517EE2E7100F49DA1 /* profilepic2.png in Resources */,
 				367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */,
 				8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */,
