@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Scripts": {
+            "applicationId": "jkE7PTxF8tp0QMKtLtKsrANLho8ReqmxspSCn20M", 
+            "masterKey": "dGhwLAowy9o4wqm01Pdag5w1vMOUDudIKnlPDVrr"
+        }, 
+        "_default": {
+            "link": "Scripts"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}

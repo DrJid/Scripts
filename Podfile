@@ -1,4 +1,3 @@
-platform :ios,  '6.0'
+platform :ios,  '7.0'
 pod 'Parse'
 pod 'SVProgressHUD'
-pod 'GCPlaceholderTextView'
