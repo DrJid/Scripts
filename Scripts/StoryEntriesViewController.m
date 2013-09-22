@@ -32,6 +32,7 @@
     
     self.entryField.placeholderColor = [UIColor whiteColor];
     self.entryField.placeholder = @"Continue this story...";
+    [self.entryField setFont:[UIFont fontWithName:@"Helvetica Neue" size:16.0]];
     
     NSLog(@"story: %@", self.story);
     NSLog(@"story Entries: %@", [self.story objectForKey:@"storyEntries"]);

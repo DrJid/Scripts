@@ -489,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29X-PQ-0QX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3357" y="225"/>
+            <point key="canvasLocation" x="3353" y="233"/>
         </scene>
         <!--Story Map View Controller - Map-->
         <scene sceneID="726-94-dxb">
@@ -563,11 +563,7 @@
     </scenes>
     <resources>
         <image name="background3.jpeg" width="640" height="1136"/>
-        <image name="background3.jpeg" width="640" height="1136"/>
-        <image name="background3.jpeg" width="640" height="1136"/>
-        <image name="background3.jpeg" width="640" height="1136"/>
         <image name="profilepic2.png" width="200" height="251"/>
-        <image name="tablebg.png" width="640" height="1136"/>
         <image name="tablebg.png" width="640" height="1136"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
