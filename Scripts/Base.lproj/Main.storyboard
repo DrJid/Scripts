@@ -545,10 +545,6 @@
     </scenes>
     <resources>
         <image name="background2.png" width="999" height="1725"/>
-<<<<<<< HEAD
-=======
-
->>>>>>> a496a375ededb23d723cbbd41f5c32aaa04141bc
         <image name="profilepic2.png" width="200" height="251"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
