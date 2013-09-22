@@ -146,6 +146,23 @@
     boundingRegion.span.longitudeDelta *= 1.1f;
     [self.mapView setRegion:boundingRegion animated:YES];
     
+    
+    
+    // 3
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+//    CLLocationCoordinate2D zoomLocation;
+//    zoomLocation.latitude = 39.281516;
+//    zoomLocation.longitude= -76.580806;
+//    
+//    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(, 0.5*100, 0.5*100);
+//    [self.mapView setRegion:viewRegion animated:YES];
+
+
 }
 
 - (void)didReceiveMemoryWarning
