@@ -63,36 +63,9 @@
 
         }
     }
-    NSLog(@"map ann: %@", self.mapAnnotations); 
-    CLLocationCoordinate2D allLocations[ self.locationArray.count ];
+    NSLog(@"map ann: %@", self.mapAnnotations);
     
-    MKMapPoint points[self.locationArray.count];
-
-    int i = 0;
-    for (PFGeoPoint *geoPoint in self.locationArray)
-    {
-        CLLocationCoordinate2D location;
-        location.latitude = geoPoint.latitude;
-        location.longitude = geoPoint.longitude;
-        allLocations[i++] = location;
-        points[i++] = MKMapPointForCoordinate(location);
-    }
-    MKGeodesicPolyline *polyline = [MKGeodesicPolyline polylineWithCoordinates:allLocations count:self.locationArray.count];
-
-    [self.mapView addAnnotations:self.mapAnnotations];
-    if (self.locationArray.count > 1) {
-        [self.mapView addOverlay:polyline level:MKOverlayLevelAboveRoads];
-    }
-    
-//    MKCoordinateRegion boundingRegion = CoordinateRegionBoundingMapPoints(points, self.locationArray.count);
-
-    /*
-    boundingRegion.span.latitudeDelta *= 1.1f;
-    boundingRegion.span.longitudeDelta *= 1.1f;
-    [self.mapView setRegion:boundingRegion animated:YES];
-*/
-    
-    /*
+        /*
     CLLocationCoordinate2D coords[3] = {startLocation, endLocation, otherLocation};
     MKGeodesicPolyline *polyline = [MKGeodesicPolyline polylineWithCoordinates:coords count:3];
     */
@@ -139,6 +112,40 @@
     */
     
 
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    CLLocationCoordinate2D allLocations[ self.locationArray.count ];
+    MKMapPoint points[self.locationArray.count];
+    
+    int i = 0;
+    for (PFGeoPoint *geoPoint in self.locationArray)
+    {
+        CLLocationCoordinate2D location;
+        location.latitude = geoPoint.latitude;
+        location.longitude = geoPoint.longitude;
+        allLocations[i++] = location;
+    }
+    
+    for (int i = 0; i  < self.locationArray.count; i++) {
+        points[i] = MKMapPointForCoordinate(allLocations[i]);
+    }
+    
+    MKGeodesicPolyline *polyline = [MKGeodesicPolyline polylineWithCoordinates:allLocations count:self.locationArray.count];
+    
+    [self.mapView addAnnotations:self.mapAnnotations];
+    if (self.locationArray.count > 1) {
+        [self.mapView addOverlay:polyline level:MKOverlayLevelAboveRoads];
+    }
+    
+    
+    MKCoordinateRegion boundingRegion = CoordinateRegionBoundingMapPoints(points, self.locationArray.count);
+    
+    boundingRegion.span.latitudeDelta *= 1.1f;
+    boundingRegion.span.longitudeDelta *= 1.1f;
+    [self.mapView setRegion:boundingRegion animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -227,4 +234,27 @@
     }
     return nil;
 }
+MKCoordinateRegion CoordinateRegionBoundingMapPoints(MKMapPoint *points, NSUInteger count) {
+    if (count == 0) {
+        return MKCoordinateRegionForMapRect(MKMapRectWorld);
+    }
+    
+    MKMapRect boundingMapRect;
+    boundingMapRect.origin = points[0];
+    boundingMapRect.size = MKMapSizeMake(0.0, 0.0);
+    
+    for (NSUInteger i = 1; i < count; i++) {
+        MKMapPoint point = points[i];
+        if (!MKMapRectContainsPoint(boundingMapRect, point)) {
+            boundingMapRect = MKMapRectUnion(boundingMapRect, (MKMapRect){.origin=point,.size={0.0,0.0}});
+        }
+    }
+    
+    MKCoordinateRegion region = MKCoordinateRegionForMapRect(boundingMapRect);
+    region.span.latitudeDelta = MAX(region.span.latitudeDelta, 0.001);
+    region.span.longitudeDelta = MAX(region.span.longitudeDelta, 0.001);
+    
+    return region;
+}
+
 @end
