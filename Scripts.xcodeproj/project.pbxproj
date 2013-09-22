@@ -41,6 +41,7 @@
 		1698722517EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722217EDD5D2008DFE44 /* TPKeyboardAvoidingScrollView.m */; };
 		1698722617EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */; };
 		16CFC72A17EE65A40099019D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CFC72817EDF5E20099019D /* MapKit.framework */; };
+		16CFC72C17EE84940099019D /* canyon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16CFC72B17EE84940099019D /* canyon.png */; };
 		367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 367A677F17ED92C300AF1EA4 /* rarr.jpg */; };
 		369914A517ED82C100BA98C0 /* pony.png in Resources */ = {isa = PBXBuildFile; fileRef = 369914A417ED82C100BA98C0 /* pony.png */; };
 		8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2BCCDA17EE016D00F49DA1 /* background2.png */; };
@@ -109,6 +110,7 @@
 		1698722317EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		1698722417EDD5D2008DFE44 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		16CFC72817EDF5E20099019D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		16CFC72B17EE84940099019D /* canyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canyon.png; sourceTree = "<group>"; };
 		3105AC859D5C4D8F92FE3E30 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		367A677F17ED92C300AF1EA4 /* rarr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rarr.jpg; sourceTree = "<group>"; };
 		369914A417ED82C100BA98C0 /* pony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pony.png; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				8B2BCCDA17EE016D00F49DA1 /* background2.png */,
 				367A677F17ED92C300AF1EA4 /* rarr.jpg */,
 				369914A417ED82C100BA98C0 /* pony.png */,
+				16CFC72B17EE84940099019D /* canyon.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -326,14 +329,12 @@
 				ORGANIZATIONNAME = "Maijid Moujaled";
 				TargetAttributes = {
 					162E555317ED514000A0C1E3 = {
-
 						DevelopmentTeam = JW9JB29EY4;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
 							};
 						};
-
 					};
 					162E557417ED514000A0C1E3 = {
 						TestTargetID = 162E555317ED514000A0C1E3;
@@ -369,6 +370,7 @@
 				367A678017ED92C300AF1EA4 /* rarr.jpg in Resources */,
 				8B2BCCDB17EE016D00F49DA1 /* background2.png in Resources */,
 				369914A517ED82C100BA98C0 /* pony.png in Resources */,
+				16CFC72C17EE84940099019D /* canyon.png in Resources */,
 				162E556217ED514000A0C1E3 /* InfoPlist.strings in Resources */,
 				162E556B17ED514000A0C1E3 /* Main.storyboard in Resources */,
 			);

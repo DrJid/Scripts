@@ -17,7 +17,7 @@ Parse.Cloud.afterSave("StoryEntry", function(request) {
   Parse.Push.send({
     where: pushQuery, // Set our Installation query
     data: {
-      alert: "New comment: " + storyEntryText
+      alert: "New story entry: " + storyEntryText
     }
   }, {
     success: function() {
